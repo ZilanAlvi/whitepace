@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Task Objectives</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes scaleIn {
+        from {
+            transform: scale(0.9);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    .animate-fadeIn {
+        animation: fadeIn 1s ease-out forwards;
+    }
+    .animate-scaleIn {
+        animation: scaleIn 0.5s ease-out forwards;
+    }
+    .pricing-card {
+        @apply transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:shadow-2xl;
+    }
+    .feature-item {
+        @apply transition-all duration-300 ease-in-out;
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    .pricing-card:hover .feature-item {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .feature-item:nth-child(1) { transition-delay: 100ms; }
+    .feature-item:nth-child(2) { transition-delay: 200ms; }
+    .feature-item:nth-child(3) { transition-delay: 300ms; }
+    .feature-item:nth-child(4) { transition-delay: 400ms; }
+    .feature-item:nth-child(5) { transition-delay: 500ms; }
+    .feature-item:nth-child(6) { transition-delay: 600ms; }
+    .feature-item:nth-child(7) { transition-delay: 700ms; }
+</style>
+</head>
+<body class="bg-white">
+
+<!-- Header with logo and mobile menu -->
+<header class="bg-[#0D3A6C] text-white sticky top-0 z-50 shadow-md">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#" class="flex items-center space-x-3">
+      <img src="picture/Logo-1.png" alt="Logo" class="h-10 object-contain" />
+      <span class="text-2xl font-bold select-none"></span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-8 font-semibold">
+      <a href="#" class="hover:text-gray-300 transition-colors duration-300">Home</a>
+      <a href="#" class="underline underline-offset-4">Pricing</a>
+      <a href="#" class="hover:text-gray-300 transition-colors duration-300">Products</a>
+      <a href="#" class="hover:text-gray-300 transition-colors duration-300">Contact</a>
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button id="mobile-menu-button" aria-label="Toggle menu" class="md:hidden focus:outline-none">
+      <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+      <svg id="close-icon" class="hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Nav -->
+  <nav id="mobile-menu" class="hidden bg-[#0D3A6C] px-6 pb-6 md:hidden font-semibold space-y-4">
+    <a href="#" class="block hover:text-gray-300">Home</a>
+    <a href="#" class="block underline underline-offset-4">Pricing</a>
+    <a href="#" class="block hover:text-gray-300">Products</a>
+    <a href="#" class="block hover:text-gray-300">Contact</a>
+  </nav>
+</header>
+
+<!-- Existing Content -->
+<div class="bg-[#0D3A6C] py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 text-white mb-10 md:mb-0 md:pr-10 animate-fadeIn" style="animation-delay: 200ms;">
+      <h1 class="text-4xl lg:text-5xl font-bold mb-4">Use as Extension</h1>
+      <p class="text-lg mb-8">Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.</p>
+      <a class="inline-block bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-600 transition-transform duration-300 transform hover:scale-105" href="#">Let's Go -&gt;</a>
+    </div>
+    <div class="md:w-1/2 animate-fadeIn" style="animation-delay: 400ms;">
+      <div class="bg-gray-300 w-full h-64 rounded-lg transform transition-transform duration-500 hover:scale-105 hover:rotate-3"></div>
+    </div>
+  </div>
+</div>
+<div class="py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 order-2 md:order-1 animate-fadeIn" style="animation-delay: 400ms;">
+      <div class="bg-gray-300 w-full h-80 rounded-lg transform transition-transform duration-500 hover:scale-105 hover:-rotate-3"></div>
+    </div>
+    <div class="md:w-1/2 order-1 md:order-2 md:pl-16 mb-10 md:mb-0 animate-fadeIn" style="animation-delay: 200ms;">
+      <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-gray-800">Customise it to your needs</h2>
+      <p class="text-lg mb-8 text-gray-600">Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</p>
+      <a class="inline-block bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-600 transition-transform duration-300 transform hover:scale-105" href="#">Let's Go -&gt;</a>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+  <div class="max-w-7xl mx-auto text-center animate-fadeIn">
+    <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-gray-800">Choose Your Plan</h2>
+    <p class="text-lg max-w-3xl mx-auto text-gray-600">Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.</p>
+  </div>
+
+  <!-- Container for dynamic pricing -->
+  <div id="pricing-container" class="mt-16 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+</div>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  mobileMenuButton.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    if (isOpen) {
+      mobileMenu.classList.add('hidden');
+      menuIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+      mobileMenuButton.setAttribute('aria-expanded', 'false');
+    } else {
+      mobileMenu.classList.remove('hidden');
+      menuIcon.classList.add('hidden');
+      closeIcon.classList.remove('hidden');
+      mobileMenuButton.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  // Function to render pricing cards dynamically
+  function renderPricing(plans) {
+    const container = document.getElementById('pricing-container');
+    container.innerHTML = '';
+
+    plans.forEach((plan, index) => {
+      const featuresHTML = plan.features.map(feature => `
+        <li class="flex items-center feature-item">
+          <span class="material-icons ${plan.iconColorClass} mr-2">check</span>${feature}
+        </li>
+      `).join('');
+
+      const descHTML = plan.description ? `<p class="text-sm ${plan.textColor} mb-2">${plan.description}</p>` : '';
+
+      const cardHTML = `
+        <div class="rounded-lg p-8 animate-scaleIn pricing-card ${plan.bgColor}" style="animation-delay: ${index * 200}ms;">
+          <h3 class="text-xl font-bold ${plan.textColor}">${plan.name}</h3>
+          <p class="text-4xl font-bold mt-4 ${plan.textColor}">${plan.price}</p>
+          ${descHTML}
+          <ul class="mt-8 space-y-4 ${plan.textColor}">
+            ${featuresHTML}
+          </ul>
+          <a href="${plan.buttonLink}" class="mt-8 block w-full text-center font-semibold py-3 px-6 rounded-lg
+            ${plan.buttonBgClass} ${plan.buttonTextClass} ${plan.buttonHoverClass} transition-transform duration-300 transform hover:scale-105">${plan.buttonText}</a>
+        </div>
+      `;
+
+      container.insertAdjacentHTML('beforeend', cardHTML);
+    });
+  }
+
+  // Fetch pricing data from external JSON and render
+  window.addEventListener('DOMContentLoaded', () => {
+    fetch('pricing-data.json')
+      .then(response => response.json())
+      .then(data => {
+        renderPricing(data);
+      })
+      .catch(err => {
+        console.error('Error loading pricing data:', err);
+        // Optionally fallback to default or show error message
+      });
+  });
+</script>
+
+</body>
+</html>

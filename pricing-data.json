@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Free",
+    "price": "$0",
+    "description": "",
+    "features": [
+      "Capture ideas and find them quickly",
+      "Sync unlimited devices",
+      "10 GB monthly uploads",
+      "200 MB max. note size",
+      "Customize Home dashboard and access extra widgets",
+      "Connect primary Google Calendar account",
+      "Add due dates, reminders, and notifications to your tasks"
+    ],
+    "buttonText": "Get Started",
+    "buttonLink": "#",
+    "bgColor": "border border-gray-200",
+    "textColor": "text-gray-800",
+    "iconColorClass": "text-green-500",
+    "buttonBgClass": "bg-gray-100",
+    "buttonTextClass": "text-gray-800",
+    "buttonHoverClass": "hover:bg-gray-200"
+  },
+  {
+    "name": "Personal",
+    "price": "$11.99",
+    "description": "Keep home and family on track",
+    "features": [
+      "Sync unlimited devices",
+      "10 GB monthly uploads",
+      "200 MB max. note size",
+      "Customize Home dashboard and access extra widgets",
+      "Connect primary Google Calendar account",
+      "Add due dates, reminders, and notifications to your tasks"
+    ],
+    "buttonText": "Get Started",
+    "buttonLink": "#",
+    "bgColor": "bg-[#0D3A6C] shadow-xl",
+    "textColor": "text-white",
+    "iconColorClass": "text-blue-400",
+    "buttonBgClass": "bg-blue-500",
+    "buttonTextClass": "text-white",
+    "buttonHoverClass": "hover:bg-blue-600"
+  },
+  {
+    "name": "Organization",
+    "price": "$49.99",
+    "description": "",
+    "features": [
+      "Capture ideas and find them quickly",
+      "Sync unlimited devices",
+      "10 GB monthly uploads",
+      "200 MB max. note size",
+      "Customize Home dashboard and access extra widgets",
+      "Connect primary Google Calendar account",
+      "Add due dates, reminders, and notifications to your tasks"
+    ],
+    "buttonText": "Get Started",
+    "buttonLink": "#",
+    "bgColor": "border border-gray-200",
+    "textColor": "text-gray-800",
+    "iconColorClass": "text-green-500",
+    "buttonBgClass": "bg-gray-100",
+    "buttonTextClass": "text-gray-800",
+    "buttonHoverClass": "hover:bg-gray-200"
+  }
+]

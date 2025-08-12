@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Whitepace Reviews</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #04245B;
+    }
+    .bg-custom-gradient {
+        background-image: linear-gradient(to bottom right, #04245B, #021B45);
+    }
+    .testimonial-card {
+        background-color: #FFFFFF;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .testimonial-card.active {
+        background-color: #4A90E2;
+        color: white;
+    }
+    .testimonial-card.active .text-gray-500 {
+        color: #E0E0E0;
+    }
+    .testimonial-card.active .text-gray-800 {
+        color: white;
+    }
+</style>
+</head>
+<body class="text-white">
+<header class="bg-custom-gradient py-10 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <div class="flex items-center">
+      <img alt="Whitepace logo" class="h-8" src="picture/Logo-1.png"/>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+      <div class="relative mb-12 lg:mb-0">
+        <img alt="People collaborating around a laptop on a desk with plants." class="w-full h-auto rounded-lg" src="picture/Apps.png"/>
+      </div>
+      <div class="text-center lg:text-left">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">Work with Your Favorite Apps Using Whitepace</h1>
+        <p class="mt-6 text-lg text-gray-300 max-w-lg mx-auto lg:mx-0">Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.</p>
+        <a class="mt-8 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-md transition duration-300" href="#">Read more →</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="bg-white py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">What Our Clients Say</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="testimonial-card p-8 rounded-lg shadow-lg">
+          <span class="text-5xl text-gray-300">“</span>
+          <p class="text-gray-600 mb-6">Whitepace is designed as a collaboration tool for businesses that is a full project management solution.</p>
+          <div class="flex items-center">
+            <img alt="Oberon Shaw" class="w-12 h-12 rounded-full mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWXoVL4etSPfcf5W4Tf2aptxLb5XdIbzsCUZcC8-8DuIRxWGE7VD9R287rEeUQQyzv7uqOraLh2_TBmjUQHQRo266cGrccAyBQtzUo0he4piI-Y_0VWAiBTSlXjB8W1Y7vVp6KhM__9NqgZ926aqevxxcLdDjZcVGssNdaJRpjNEnaUZEb8eSQ6hlocGI6g7ENKvR8LHCAUARAJEue4i8_93FfKNcHKAlO-YkOeyK44akuOv84w4sc7HPuFmnuZeosiTMRw-LlLV3p"/>
+            <div>
+              <p class="font-bold text-gray-800">Oberon Shaw, MCH</p>
+              <p class="text-sm text-gray-500">Head of Talent Acquisition, North America</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card active p-8 rounded-lg shadow-lg">
+          <span class="text-5xl text-blue-300">“</span>
+          <p class="mb-6">Whitepace is designed as a collaboration tool for businesses that is a full project management solution.</p>
+          <div class="flex items-center">
+            <img alt="Oberon Shaw" class="w-12 h-12 rounded-full mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6aJE27xnBsHsh9ScH4NqELt0LKZgeAPVt5tO_0FbyykG7Gn_MmEr2cv2pYmXeEvxA7MH8YidEvSy3e-nJHfHv3Kk4fCLmDSiGc6sUx4tHe8HQHgGxRUK_6aS5grBW9_tyl6J8FVOw2NuykzBTZRjIVqtSaHF1_pOyzgHwX9X76SBsAZM1Rm_ID2AWY97_ENndtVjqU-ly4EaZvhSZ9pGFF2v75LipCd5oXDDUc1jI7nQGsZFu_eIIGgPvADgh86HFwFZEEzDxqPxH"/>
+            <div>
+              <p class="font-bold">Oberon Shaw, MCH</p>
+              <p class="text-sm">Head of Talent Acquisition, North America</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card p-8 rounded-lg shadow-lg">
+          <span class="text-5xl text-gray-300">“</span>
+          <p class="text-gray-600 mb-6">Whitepace is designed as a collaboration tool for businesses that is a full project management solution.</p>
+          <div class="flex items-center">
+            <img alt="Oberon Shaw" class="w-12 h-12 rounded-full mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBocDDCoOBB4hK4G2SWMKkvnT18islUpYynWXB1FlE_6D0AiZdisnWH7DdWXcKPLAQm9eMa_YOJEF_yaOdqycf5Y_9_Kl9_HHl4DkCeCzeHPx3T_Ieyjyke49Ijr93qO0YvBKLfFUFZ2cr3104D6VF6u8n5WE7baGlJ1Nzs7ubfFNKTKWM8aTeXzbZkwSMOenzQ6vRTU7pKdcoqlqLIgAj2IRBvDzTjFsxBlV9c8BqWCl7X2jXFDLLr3BsnHsdlzj8IDPBxrKpoUCc_"/>
+            <div>
+              <p class="font-bold text-gray-800">Oberon Shaw, MCH</p>
+              <p class="text-sm text-gray-500">Head of Talent Acquisition, North America</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mt-12 space-x-2">
+        <button class="w-2.5 h-2.5 bg-gray-300 rounded-full"></button>
+        <button class="w-2.5 h-2.5 bg-blue-500 rounded-full"></button>
+        <button class="w-2.5 h-2.5 bg-gray-300 rounded-full"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl sm:text-5xl font-bold">Try Whitepace today</h2>
+      <p class="mt-4 text-lg text-gray-300">Get started for free. Add your whole team as your needs grow.</p>
+      <a class="mt-8 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-md transition duration-300" href="#">Try today free →</a>
+      <p class="mt-6 text-gray-400">On a big team? <a class="text-white underline" href="#">Contact sales</a></p>
+      <div class="mt-8 flex justify-center space-x-6">
+        <a class="text-white" href="#"><i class="material-icons text-4xl">android</i></a>
+        <a class="text-white" href="#"><i class="material-icons text-4xl">window</i></a>
+        <a class="text-white" href="#"><i class="material-icons text-4xl">apple</i></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-blue-900/20 pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <div class="lg:col-span-2 pr-8">
+        <img alt="Whitepace logo" class="h-8 mb-4" src="picture/Logo-1.png"/>
+        <p class="text-gray-400">whitepace was created for the new ways we live and work. We make beauty work space around the world.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-white mb-4">Product</h3>
+        <ul class="space-y-2">
+          <li><a class="text-gray-400 hover:text-white" href="#">Overview</a></li>
+          <li><a class="text-gray-400 hover:text-white" href="#">Pricing</a></li>
+          <li><a class="text-gray-400 hover:text-white" href="#">Customer stories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-white mb-4">Resources</h3>
+        <ul class="space-y-2">
+          <li><a class="text-gray-400 hover:text-white" href="#">Blog</a></li>
+          <li><a class="text-gray-400 hover:text-white" href="#">Guides &amp; tutorials</a></li>
+          <li><a class="text-gray-400 hover:text-white" href="#">Help center</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-white mb-4">Company</h3>
+        <ul class="space-y-2">
+          <li><a class="text-gray-400 hover:text-white" href="#">About us</a></li>
+          <li><a class="text-gray-400 hover:text-white" href="#">Careers</a></li>
+          <li><a class="text-gray-400 hover:text-white" href="#">Media kit</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-5">
+        <h3 class="font-bold text-white mb-4">Try It Today</h3>
+        <p class="text-gray-400 mb-4">Get started for free. Add your whole team as your needs grow.</p>
+        <a class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md transition duration-300" href="#">Start today</a>
+      </div>
+    </div>
+
+    <div class="mt-16 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+      <div class="flex items-center space-x-6 mb-4 md:mb-0">
+        <div class="flex items-center">
+          <i class="material-icons mr-1">language</i> English <i class="material-icons ml-1">arrow_drop_down</i>
+        </div>
+        <a class="hover:text-white" href="#">Terms &amp; privacy</a>
+        <a class="hover:text-white" href="#">Security</a>
+        <a class="hover:text-white" href="#">Status</a>
+        <span>©2025 Whitepace LLC.</span>
+      </div>
+      <div class="flex space-x-4">
+        <a class="hover:text-white" href="#">
+          <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path>
+          </svg>
+        </a>
+        <a class="hover:text-white" href="#">
+          <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+          </svg>
+        </a>
+        <a class="hover:text-white" href="#">
+          <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.013c0 4.288 2.872 7.925 6.786 9.165.495.09.674-.214.674-.476 0-.234-.009-.858-.013-1.684-2.79.602-3.378-1.34-3.378-1.34-.45-.115-1.096-1.386-1.096-1.386-.897-.614.068-.602.068-.602.99.07 1.512 1.016 1.512 1.016.88 1.503 2.303 1.067 2.864.815.09-.633.344-1.068.627-1.313-2.185-.248-4.482-1.09-4.482-4.862 0-1.074.385-1.952 1.017-2.64-.102-.25-.44-1.25.097-2.603 0 0 .825-.264 2.704 1.01A9.49 9.49 0 0112 6.82c.85 0 1.7.114 2.486.335 1.878-1.274 2.702-1.01 2.702-1.01.537 1.353.2 2.353.1 2.603.633.688 1.016 1.566 1.016 2.64 0 3.782-2.298 4.61-4.49 4.852.354.305.67.91.67 1.832 0 1.312-.012 2.37-.012 2.692 0 .264.178.57.68.475C19.128 19.938 22 16.3 22 12.013 22 6.477 17.523 2 12 2z" fill-rule="evenodd"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
